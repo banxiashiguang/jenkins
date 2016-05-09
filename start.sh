@@ -6,3 +6,7 @@ oclint-json-compilation-database -- -report-type pmd -o oclint.xml
 mkdir sonar-reports
 mv oclint.xml sonar-reports/
 sonar-runner
+
+#删除中间文件
+rm -f oclint.xml compile_commands.json
+rm -rf sonar-reports/
